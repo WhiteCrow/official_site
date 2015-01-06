@@ -1,0 +1,7 @@
+%header#page-nav
+  %nav.wrap
+    %ul
+      - {"/work" => "Client Work"}.each_pair do |link, title|
+        %li
+          %a{href: link} 
+            = title
