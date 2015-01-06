@@ -35,4 +35,14 @@ helpers do
     options[:class] << " active" if page_url == current_url
     link_to(link_text, page_url, options)
   end
+
+  def menu_items
+    {
+      "/"         => "Home",
+      "/work"     => "Client Work",
+      "/projects" => "Projects",
+      "/people"   => "People",
+      "/contact"  => "Contact"
+    }
+  end
 end
