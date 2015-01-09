@@ -1,0 +1,16 @@
+%section#universal-footer
+  .wrap
+    .footer-nav
+      - footer_items.each_pair do |title, items|
+        %ul
+          %li.title 
+            = title
+          - items.each_pair do |item, path|
+            %li
+              %a{ href: path}
+                = item
+
+%footer#copyright-footer
+  .wrap
+    %strong © 2015 thoughtbot, inc.
+    The design of a robot and thoughtbot are registered trademarks of thoughtbot, inc.
