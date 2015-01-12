@@ -48,12 +48,10 @@ helpers do
 
   def footer_items
     {
-      "Client Work" => { "Case Studies" => "#", "Services"      => "#"},
-      "Product"     => { "Upcase"       => "#", "Hound"         => "#", "FormKeep" => "#", "Books"   => "#"},
-      "Open Source" => { "Bourbon"      => "#", "Factory Girl"  => "#", "Laptop"   => "#", "More..." => "#"},
-      "Community"   => { "Playbook"     => "#", "Blog"          => "#", "Podcasts" => "#"},
-      "People"      => { "Team"         => "#", "apprentice.io" => "#" },
-      "Contact"     => { "Call Us"      => "#", "Visit Us"      => "#", "Hire Us"  => "#"}
+      "Client Work" => { "Case Studies" => "/work#cases", "Services"      => "/work#services"},
+      "Product"     => { "Taoffer"      => "http://www.taoffer.com/"},
+      "Open Source" => { "Github"       => "https://github.com/leandone"},
+      "Contact"     => { "Call Us"      => "#", "Hire Us"  => "#"}
     }
   end
 end
