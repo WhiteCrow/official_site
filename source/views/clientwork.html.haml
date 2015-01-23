@@ -13,21 +13,50 @@ layout: simple
 %a{ href: "#"}
   %section.case-study#tile
     .case-study__overlay
-      .case-study__image{ style: "background-image: url('/assets/images/bg_overlay.png')" }  test
+      .case-study__image{ style: "background-image: url('/assets/images/bg_overlay.png')" }
     .case-study__border
-    .wrap.wrap--case-study <!-- surplus? -->
-
+    .wrap.wrap--case-study 
+      .case-study__info.case-study__info--right 
+        %img.case-study__image_logo{src: "", alt:"Logo"}
+        %h2.case-study__desc Designing and building a thoroughly user-validated onboarding flow for Tile's iOS app.
+        %h3.case-study__type Visual Design, User Testing, iOS Design, Front-end Development
+        %span.case-study__link
+          / %i.case-study__icon.fa.fa-play-circle Read more #js effect it?
 
 %a{ href: "#"}
   %section.case-study#martial_codex
     .case-study__overlay
+      .case-study__image{ style: "background-image: url('/assets/images/bg_rd.png')" }
     .case-study__border
-    .wrap.wrap--case-study <!-- surplus? -->
+    .wrap.wrap--case-study 
+      .case-study__info.case-study__info--left
+        %img.case-study__logo{src: "", alt:"Logo"}
+        %h2.case-study__desc Martial Codex teaches the martial arts over the web. We designed and built a digital experience to help them do it.
+        %h3.case-study__type Mobile (Google's "Material") Design, WebGL Engine Development
+        %span.case-study__link
+          / %i.case-study__icon.fa.fa-play-circle Read more #js effect it?
+
+%a{ href: "#"}
+  %section.case-study#nixle
+    .case-study__overlay
+      .case-study__image{ style: "background-image: url('/assets/images/bg_wall.png')" }
+    .case-study__border
+    .wrap.wrap--case-study 
+      .case-study__info.case-study__info--right
+        %img.case-study__logo{src: "", alt:"Logo"}
+        %h2.case-study__desc Helping Nixle build a web and mobile app for relevant local public safety and school information. it.
+        %h3.case-study__type iOS Design & Development, Web Design & Development, User Testing
+        %span.case-study__link
+          / %i.case-study__icon.fa.fa-play-circle Read more #js effect it?
+  
 
 
-%a
+%section.cta--case-study
+  .wrap
+    %a.big-button.show-form{ href: "#"} 
+      Want us to work for you?
+      %span Click here to hire us
+      / there a "::after" under <a>, maybe it`s a effection by js.
 
-%section
 
-%section
 

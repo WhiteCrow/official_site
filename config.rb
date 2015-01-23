@@ -54,4 +54,9 @@ helpers do
       "Contact"     => { "Call Us"      => "#", "Hire Us"  => "#"}
     }
   end
+
 end
+
+page 'test'
+page 'products'
+page 'clientwork'
