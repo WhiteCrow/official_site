@@ -57,6 +57,6 @@ helpers do
 
 end
 
-page 'test'
+
 page 'products'
 page 'clientwork'
