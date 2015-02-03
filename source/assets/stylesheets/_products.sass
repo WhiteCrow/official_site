@@ -1,290 +1,88 @@
-header.our-products#page-header
-  display: block
+
+=total-a($bgcolor)
+  color: white
+  width: 150px
+  padding: 12px
+  display: inline-block
+  text-align: center
+  border-radius: 5px
+  background-color: $bgcolor
+
+=total-logo($link)
+  background-repeat: no-repeat
+  text-indent: -9999px
+  margin-bottom: 32px
+  background-image: $link
+
+
+#header-box
+  height: 646px
+  text-align: center
   background-color: rgba(46,48,58,0.96)
+  color: #fff
+  padding: 200px 22% 200px
 
-  .wrap
-    padding-top: 0px
-    padding-right: 2.35765%
-    padding-bottom: 0px
-    padding-left: 2.35765%
-    margin: 0 auto
-    width: 66%
+  h2
+    margin-bottom: 32px
+   
 
-    .page-header-content
-      padding: 13.75em 0
-      display: block
-      text-align: center
-
-      h2
-        color: #FFF
-        text-align: center
-        font-family: "calluna-sans", sans-serif
-        font-weight: bolder
-        margin-bottom: 20px
-
-      p
-        color: #FFF
-        font-weight: normal
-        line-height: 32px
-        margin: 0 0 32px
-        font-size: 18px
-        text-align: center
-        font-family: "freight-text-pro", serif
-
-
-
-
-section#page-content
-  overflow: hidden
-  box-sizing: inherit
-  display: block
-  color: #666
-  font-family: "freight-text-pro", serif
-  font-size: 1em
-  line-height: 1.5em
-
-  .wrap, .products
-    max-width: 75em
-    margin-left: auto
-    margin-right: auto
-    max-width: 75em
-    margin-left: auto
-    margin-right: auto
-
-    .upcase
-      -webkit-font-smoothing: antialiased
-      border-bottom-color: rgb(220, 220, 220)
-      border-bottom-style: solid
-      border-bottom-width: 1px
-      border-top-color: rgb(220, 220, 220)
-      border-top-style: solid
-      border-top-width: 1px
-      box-sizing: border-box
-      color: rgb(102, 102, 102)
-      display: block
-      float: left
-      font-family: freight-text-pro, serif
-      font-size: 16px
-      height: 469px
-      line-height: 24px
-      overflow-x: hidden
-      overflow-y: hidden
-      padding-bottom: 120px
-      padding-left: 60px
-      padding-right: 60px
-      padding-top: 120px
-      position: relative
-      width: 1012.90625px
-
-      .product-logo-upcase
-        -webkit-background-size: contain
-        -webkit-font-smoothing: antialiased
-        background-image: url('/assets/images/bg_upcase.svg')
-        background-repeat: no-repeat
-        background-size: contain
-        box-sizing: border-box
-        color: rgb(102, 102, 102)
-        display: block
-        font-family: calluna-sans, sans-serif
-        font-size: 36px
-        font-weight: bold
-        height: 31.5px
-        line-height: 46.7999992370606px
-        margin-bottom: 19.5001201629639px
-        margin-left: 0px
-        margin-right: 0px
-        margin-top: 0px
-        text-indent: -9999px
-        text-rendering: optimizelegibility
-        width: 892.90625px
-        
-        p
-          -webkit-font-smoothing: antialiased
-          box-sizing: border-box
-          color: rgb(102, 102, 102)
-          display: block
-          font-family: freight-text-pro, serif
-          font-size: 18px
-          font-weight: normal
-          height: 96px
-          line-height: 32px
-          margin-bottom: 32px
-          margin-left: 0px
-          margin-right: 0px
-          margin-top: 0px
-          width: 419.65625px
-
-        a
-          -webkit-box-shadow: none
-          -webkit-font-smoothing: antialiased
-          -webkit-transition-delay: 0s
-          -webkit-transition-duration: 0.1s
-          -webkit-transition-property: all
-          -webkit-transition-timing-function: linear
-          background-color: rgb(74, 144, 226)
-          border-bottom-left-radius: 5px
-          border-bottom-right-radius: 5px
-          border-top-left-radius: 5px
-          border-top-right-radius: 5px
-          box-shadow: none
-          box-sizing: border-box
-          color: rgb(255, 255, 255)
-          cursor: auto
-          display: inline-block
-          font-family: calluna-sans, sans-serif
-          font-size: 12px
-          font-weight: bold
-          height: 48px
-          line-height: 24px
-          padding-bottom: 12px
-          padding-left: 12px
-          padding-right: 12px
-          padding-top: 12px
-          text-align: center
-          text-decoration: none
-          text-transform: uppercase
-          transition-delay: 0s
-          transition-duration: 0.1s
-          transition-property: all
-          transition-timing-function: linear
-          width: 150px
-          z-index: auto
+.upcase
+  margin-top: 60px
+  margin-left: 8%
+  padding: 60px 50% 60px 5%
+  border-bottom: 1px solid #DCDCDC
+  position: relative
   
+  .block
+    background-image: url('/assets/images/block.png')
+    height: 498px
+    width: 414px
+    position: absolute
+    right: 60px
+    bottom: -197px
+    background-repeat: no-repeat
+    background-size: 100%
+    z-index: 1
+
+  .product-logo-upcase
+    +total-logo(url('/assets/images/bg_upcase.svg'))
+
+  a
+    +total-a(#4A90E2)
+
+.hound
+  margin-left: 8%
+  width: 40%
+  border-right: 1px solid #DCDCDC
+  float: left
+  padding: 60px 5% 0
+  margin-bottom: 120px
+
+  .product-logo-hound
+    +total-logo(url('/assets/images/bg_hound.svg'))
+  
+  a
+    +total-a(#9012FE)
+
+.formkeep
+  width: 40%
+  float: left
+  padding-top: 60px
+  padding-left: 7%
+  margin-bottom: 120px
+
+  .product-logo-formkeep
+    +total-logo(url('/assets/images/bg_formkeep.svg'))
+
+  a
+    +total-a(#504A5A)
 
 
-        .product-image
-          -webkit-background-size: 100%
-          -webkit-font-smoothing: antialiased
-          background-image: url('/assets/images/bg_upcase_right.png')
-          background-repeat: no-repeat
-          background-size: 100%
-          bottom: -197px
-          box-sizing: border-box
-          color: rgb(102, 102, 102)
-          display: block
-          font-family: freight-text-pro, serif
-          font-size: 16px
-          height: 498px
-          line-height: 24px
-          position: absolute
-          right: -10px
-          width: 414px
-          z-index: 1
+@media screen and (max-width: 900px)
+  .upcase a
+    display: inline-block
+    width: 60%
 
-    .hound
-      -webkit-font-smoothing: antialiased
-      border-right-color: rgb(220, 220, 220)
-      border-right-style: solid
-      border-right-width: 1px
-      box-sizing: border-box
-      color: rgb(102, 102, 102)
-      display: block
-      float: left
-      font-family: freight-text-pro, serif
-      font-size: 16px
-      height: 479px
-      line-height: 24px
-      padding-bottom: 120px
-      padding-left: 60px
-      padding-right: 60px
-      padding-top: 120px
-      position: relative
-      width: 506.453125px
-
-      .product-logo-hound
-        -webkit-background-size: contain
-        -webkit-font-smoothing: antialiased
-        background-image: url('/assets/images/bg_hound.svg')
-        background-repeat: no-repeat
-        background-size: contain
-        box-sizing: border-box
-        color: rgb(102, 102, 102)
-        display: block
-        font-family: calluna-sans, sans-serif
-        font-size: 36px
-        font-weight: bold
-        height: 36px
-        line-height: 46.7999992370606px
-        margin-bottom: 19.5001201629639px
-        margin-left: 0px
-        margin-right: 0px
-        margin-top: 0px
-        text-indent: -9999px
-        text-rendering: optimizelegibility
-        width: 385.453125px
-
-      p
-        -webkit-font-smoothing: antialiased
-        box-sizing: border-box
-        color: rgb(102, 102, 102)
-        display: block
-        font-family: freight-text-pro, serif
-        font-size: 18.3999996185303px
-        font-weight: normal
-        height: 96px
-        line-height: 32px
-        margin-bottom: 32px
-        margin-left: 0px
-        margin-right: 0px
-        margin-top: 0px
-        width: 385.453125px
-
-    .formkeep
-      -webkit-font-smoothing: antialiaseds
-      box-sizing: border-box
-      color: rgb(102, 102, 102)
-      display: block
-      float: left
-      font-family: freight-text-pro, serif
-      font-size: 16px
-      height: 448.5px
-      line-height: 24px
-      padding-bottom: 120px
-      padding-left: 60px
-      padding-right: 60px
-      padding-top: 120px
-      position: relative
-      width: 506.453125px
-
-      .product-logo-formkeep
-        -webkit-background-size: contain
-        -webkit-font-smoothing: antialiased
-        background-image: url('/assets/images/bg_formkeep.svg')
-        background-repeat: no-repeat
-        background-size: contain
-        box-sizing: border-box
-        color: rgb(102, 102, 102)
-        display: block
-        font-family: calluna-sans, sans-serif
-        font-size: 36px
-        font-weight: bold
-        height: 45px
-        line-height: 46.7999992370606px
-        margin-bottom: 19.5001201629639px
-        margin-left: 0px
-        margin-right: 0px
-        margin-top: 0px
-        text-indent: -9999px
-        text-rendering: optimizelegibility
-        width: 386.453125px
-
-      p
-        -webkit-font-smoothing: antialiased
-        box-sizing: border-box
-        color: rgb(102, 102, 102)
-        display: block
-        font-family: freight-text-pro, serif
-        font-size: 18px
-        font-weight: normal
-        height: 64px
-        line-height: 32px
-        margin-bottom: 32px
-        margin-left: 0px
-        margin-right: 0px
-        margin-top: 0px
-        width: 386.453125px
-
-
-
-
+  .upcase .block
+    background-image: none
 
