@@ -2,61 +2,28 @@
 layout: simple
 ---
 
-.wrap
-  .page-header-content
-    %h2 Our Work
-    %p We have worked with a variety of clients such as one person startup businesses, Fortune 500 enterprises, universities, and non-profits. For every project, we focus on user outcomes, usable interfaces, clean code, and working software.
-    %a{ title: "playbook", href: "#"}
+.header
+  %h2 Our Work
+  %p We have worked with a variety of clients such as one person startup businesses, Fortune 500 enterprises, universities, and non-profits. For every project, we focus on user outcomes, usable interfaces, clean code, and working software.
 
+%section.pag
+  %img{alt: "Logo", src: "/assets/images/clientwork_logo1.svg"}
+  %h2.hot2 Designing and building a thoroughly user-validated onboarding flow for Tile's iOS app.
+  %h3.hot3 Visual Design, User Testing, iOS Design, Front-end Development
 
+%section.judo
+  %img{alt: "Logo", src: "/assets/images/case-study__logo.svg"}
+  %h2.hot2 Martial Codex teaches the martial arts over the web. We designed and built a digital experience to help them do it.
+  %h3.hot3 Mobile (Google's "Material") Design, WebGL Engine Development
 
-%a{ href: "#"}
-  %section.case-study#tile
-    .case-study__overlay
-      .case-study__image{ style: "background-image: url('/assets/images/bg_overlay.png')" }
-    .case-study__border
-    .wrap.wrap--case-study 
-      .case-study__info.case-study__info--right 
-        %img.case-study__image_logo{src: "/assets/images/clientwork_logo1.svg", alt:"Logo"}
-        %h2.case-study__desc Designing and building a thoroughly user-validated onboarding flow for Tile's iOS app.
-        %h3.case-study__type Visual Design, User Testing, iOS Design, Front-end Development
-        %span.case-study__link
-          / %i.case-study__icon.fa.fa-play-circle Read more #js effect it?
+%section.tri
+  %img{alt: "Logo", src: "/assets/images/logo2.svg"}
+  %h2.hot2 Helping Nixle build a web and mobile app for relevant local public safety and school information.
+  %h3.hot3 iOS Design & Development, Web Design & Development, User Testing
 
-%a{ href: "#"}
-  %section.case-study#martial_codex
-    .case-study__overlay
-      .case-study__image{ style: "background-image: url('/assets/images/bg_rd.png')" }
-    .case-study__border
-    .wrap.wrap--case-study 
-      .case-study__info.case-study__info--left
-        %img.case-study__logo{src: "/assets/images/case-study__logo.svg", alt:"Logo"}
-        %h2.case-study__desc Martial Codex teaches the martial arts over the web. We designed and built a digital experience to help them do it.
-        %h3.case-study__type Mobile (Google's "Material") Design, WebGL Engine Development
-        %span.case-study__link
-          / %i.case-study__icon.fa.fa-play-circle Read more #js effect it?
-
-%a{ href: "#"}
-  %section.case-study#nixle
-    .case-study__overlay
-      .case-study__image{ style: "background-image: url('/assets/images/bg_wall.png')" }
-    .case-study__border
-    .wrap.wrap--case-study 
-      .case-study__info.case-study__info--right
-        %img.case-study__logo{src: "/assets/images/logo2.svg", alt:"Logo"}
-        %h2.case-study__desc Helping Nixle build a web and mobile app for relevant local public safety and school information. it.
-        %h3.case-study__type iOS Design & Development, Web Design & Development, User Testing
-        %span.case-study__link
-          / %i.case-study__icon.fa.fa-play-circle Read more #js effect it?
-  
-
-
-%section.cta--case-study
-  .wrap
-    %a.big-button.show-form{ href: "#"} 
-      Want us to work for you?
-      %span Click here to hire us
-      / there a "::after" under <a>, maybe it`s a effection by js.
-
+%section.hire
+  %a
+    Want us to work for you?
+    %span Click here to hire us
 
 
