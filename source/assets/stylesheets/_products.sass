@@ -27,11 +27,10 @@
    
 
 .upcase
-  margin-top: 60px
-  margin-left: 8%
-  padding: 60px 50% 60px 5%
+  padding: 60px 5% 60px 5%
   border-bottom: 1px solid #DCDCDC
   position: relative
+  margin: 60px 8% 0
   
   .block
     background-image: url('/assets/images/block.png')
@@ -43,6 +42,9 @@
     background-repeat: no-repeat
     background-size: 100%
     z-index: 1
+
+  p
+    width: 45%
 
   .product-logo-upcase
     +total-logo(url('/assets/images/bg_upcase.svg'))
@@ -78,7 +80,7 @@
     +total-a(#504A5A)
 
 
-@media screen and (max-width: 900px)
+@media screen and (max-width: 1000px)
   .upcase a
     display: inline-block
     width: 60%
